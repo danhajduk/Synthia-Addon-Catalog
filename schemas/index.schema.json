@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthia Addon Catalog Index",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "catalog_id", "addons"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "catalog_id": { "type": "string" },
+    "addons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["addon_id", "name", "releases"],
+        "properties": {
+          "addon_id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "repo": { "type": "string" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "featured": { "type": "boolean" },
+          "releases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["version", "core_min", "artifact", "sha256", "publisher_key_id", "release_sig"],
+              "properties": {
+                "version": { "type": "string" },
+                "core_min": { "type": "string" },
+                "core_max": { "type": "string" },
+                "artifact": {
+                  "type": "object",
+                  "required": ["type", "url"],
+                  "properties": {
+                    "type": { "type": "string" },
+                    "url": { "type": "string" }
+                  }
+                },
+                "sha256": { "type": "string" },
+                "publisher_key_id": { "type": "string" },
+                "release_sig": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

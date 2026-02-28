@@ -1,0 +1,6 @@
+# Never commit private keys
+keys/*.pem
+keys/*.key
+keys/private*
+*.swp
+.DS_Store

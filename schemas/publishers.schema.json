@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthia Addon Catalog Publishers",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "publishers"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "publishers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["publisher_id", "name", "status", "keys"],
+        "properties": {
+          "publisher_id": { "type": "string" },
+          "name": { "type": "string" },
+          "status": { "type": "string", "enum": ["enabled", "disabled"] },
+          "keys": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key_id", "status", "type", "public_key_pem"],
+              "properties": {
+                "key_id": { "type": "string" },
+                "status": { "type": "string", "enum": ["enabled", "revoked"] },
+                "type": { "type": "string", "enum": ["rsa-sha256"] },
+                "public_key_pem": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
