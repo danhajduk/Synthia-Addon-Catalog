@@ -4,3 +4,4 @@ keys/*.key
 keys/private*
 *.swp
 .DS_Store
+release-output.json
