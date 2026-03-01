@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-03-01T10:00:25Z",
+  "generated_at": "2026-03-01T12:45:12Z",
   "catalog_id": "official",
   "addons": [
     {
@@ -10,15 +10,16 @@
       "releases": [
         {
           "version": "0.1.1",
-          "core_min": "0.6.0",
+          "core_min": null,
           "core_max": null,
           "artifact": {
             "type": "github_release_asset",
-            "url": "https://github.com/danhajduk/Synthia-MQTT/archive/refs/tags/v0.1.1.tar.gz"
+            "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.1/addon.tgz"
           },
-          "sha256": "dc5525d982909931755f5ed805d1f38cbe76381e7aa196a0b34c4b3479e5f863",
+          "sha256": "2764a87b2b0c29119ecbdc1ce715f83373a1173ee7e723a57e31094fa6ea4eb8",
           "publisher_key_id": "publisher.danhajduk#2026-02",
-          "release_sig": "QP5YxF6REFGLaF3j/FwcojIodiy4eXxaspsfIbTXfNDlP5hVizmfQgOvNpavTHSjrv5yTNovahdLyjBXYcB0fa5IA75kyotg3Q0NT+6r6QTsXT/dl+nxQzr5rINJvKtysQiL8+NOrrVZXzDU0lLlScGoVMKEG0H48Ork2r+vVrlb5m80jGZ1fEgu/56/RXZLuYuucy+IXRm/qp8lzK0ZK5RilinLNA2JSu5CZhyD4hEtQ+BMA4KUsfWGrMfDhIfwf29IvTe8e+Yz32xz7N68ItPLJ/D5Ec4uYR8sjmgDMlG8YtC7qtZT3h/f1U+Az2qUJ380CNllNjuBqTnIjnMG5qH2MsSTF38icZzIM1IMHCkm/K4FlB0Glz1VPV/ON6BKgcbGtKkeEHO85bCX2KoZTQ8wsg91fzM6iGX/xsQrWuE1NOK3YG/FBHTGJKs5060VvllD2uFPTTbdeiYtKjW+Z1s1ZM+wYvpkTq0mH7vCcU4/na1ykoeUJVotoemWzdXkw0XKiHd9DK+1Idpz5sSD0NCItNA1A6gj8m0mFTtk3y+kxQCaIKyU8hCNBWCcx5az2QBLWH7alrvoVYtbty3E/Y4nLqB4RbuK2mioNn/Fua8Rx8riaLX7N+KDwVaxZbqmL8grHwLZpM7NOMIzmQuVvqnDo9SvQWkXkOmrbMGnBcs="
+          "release_sig": "LgUtv36YI083s2n5Isysv26ctQzLxo9Mb7vTwqCoFMaVK6LN76IxNzGfWMiykcSlQOmW/zdcNvz1EdTpWxAZtT6Qxta0lLH8teGTbPvRjtQvEgXHILFgdW20/UqrsoUWb0J8zMc4RltHZpEyS5srrPrWppQVnk1So/ocS60iDL1cspgnq1+5Vbb5/SnteTN5OkDiuQLoajsjYYHNVzH40aoU5Iy5ODN6MK2i6coZ1Xsw74rPhvmdL0S56BYKGSH6ihYAzj1YzZrpiJ1+DfpjjDCAuFKIXwJYvmko4EuWTy4miqAAwg61nQgsWQUkYE5lrun6qaBU5lEgcxYhEJFH9Kx8t+1w1IHHBMOdPttrhUQFlDwo8h0Bwsktk3xzPNNRkpX8AkjjrHvJrN+rhpSzRiWbfOIRBFWTRdOyteoq+bJJB+bOC/vqiXS6uVhpN+J91ftpsY6k4C9EqHeEGbgUW4ks0htTy0m13QzfS4fVFFiueQmTFd3a9P7Ht3Y22KUf15B03QeM76b1D8hF+Ntj3JGB5W3WN/nYtyf3imS9w2Rt8WKZgcJVY8KUtUZnCXBUTpArUD8jNKTCCdENduXxcndftUJIZgO0ymPxdnT6M0bv7Ex2WnPn0jz8Asa6UZkX/1SdgDJ4nqnfMcnIvdvvrxDaFzGYmIKpyyFeRyCDfU0=",
+          "signature_type": "rsa-sha256"
         }
       ]
     }
