@@ -1,28 +1,55 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage:
-#   scripts/verify.sh keys/store_public.pem
-#
-# Verifies:
-#   catalog/v1/index.json.sig
-#   catalog/v1/publishers.json.sig
+die() { echo "ERROR: $*" >&2; exit 1; }
 
-PUB="${1:-}"
-if [[ -z "${PUB}" ]]; then
-  echo "Usage: $0 <path-to-store-public-key.pem>" >&2
+usage() {
+  cat <<'EOF' >&2
+Usage:
+  scripts/verify.sh <store-public-key.pem> [options]
+
+Options:
+  --index-path <path>         default: catalog/v1/index.json
+  --publishers-path <path>    default: catalog/v1/publishers.json
+EOF
+}
+
+PUBKEY="${1:-}"
+INDEX_PATH="catalog/v1/index.json"
+PUBLISHERS_PATH="catalog/v1/publishers.json"
+
+if [[ "$PUBKEY" == "-h" || "$PUBKEY" == "--help" ]]; then
+  usage
+  exit 0
+fi
+
+if [[ -z "$PUBKEY" ]]; then
+  usage
   exit 1
 fi
-[[ -f "$PUB" ]] || { echo "Public key not found: $PUB" >&2; exit 1; }
+shift
 
-INDEX="catalog/v1/index.json"
-PUBS="catalog/v1/publishers.json"
-
-for f in "$INDEX" "$PUBS" "${INDEX}.sig" "${PUBS}.sig"; do
-  [[ -f "$f" ]] || { echo "Missing: $f" >&2; exit 1; }
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --index-path) INDEX_PATH="$2"; shift 2;;
+    --publishers-path) PUBLISHERS_PATH="$2"; shift 2;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *) die "Unknown argument: $1";;
+  esac
 done
 
-openssl dgst -sha256 -verify "$PUB" -signature "${INDEX}.sig" "$INDEX" >/dev/null
-openssl dgst -sha256 -verify "$PUB" -signature "${PUBS}.sig" "$PUBS" >/dev/null
+[[ -f "$PUBKEY" ]] || die "Public key not found: $PUBKEY"
+[[ -f "$INDEX_PATH" ]] || die "Missing: $INDEX_PATH"
+[[ -f "${INDEX_PATH}.sig" ]] || die "Missing: ${INDEX_PATH}.sig"
+[[ -f "$PUBLISHERS_PATH" ]] || die "Missing: $PUBLISHERS_PATH"
+[[ -f "${PUBLISHERS_PATH}.sig" ]] || die "Missing: ${PUBLISHERS_PATH}.sig"
 
-echo "OK: signatures valid"
+command -v openssl >/dev/null 2>&1 || die "openssl is required"
+
+openssl dgst -sha256 -verify "$PUBKEY" -signature "${INDEX_PATH}.sig" "$INDEX_PATH" >/dev/null
+openssl dgst -sha256 -verify "$PUBKEY" -signature "${PUBLISHERS_PATH}.sig" "$PUBLISHERS_PATH" >/dev/null
+
+echo "OK: signatures are valid"

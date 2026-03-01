@@ -17,7 +17,12 @@ Files:
 - catalog/v1/publishers.json.sig Signature of publishers.json
 
 Tooling:
-- scripts/sign.sh              Signs index/publishers with OpenSSL RSA key
-- scripts/verify.sh            Verifies signatures with public key
+- scripts/init-catalog.sh      Creates `index.json` / `publishers.json` if missing
+- scripts/import-addon-release.sh  Imports one release from a `manifest.json` + release metadata
+- scripts/fetch-and-import-from-git.sh  Fetches addon repo, reads manifest, then imports release
+- scripts/sign-release.sh       Creates publisher release signature (ed25519 over artifact sha256 bytes)
+- scripts/verify-release.sh     Verifies publisher release signature
+- scripts/sign.sh               Signs index/publishers with store private key
+- scripts/verify.sh             Verifies catalog signatures with store public key
 
 NOTE: Keep private signing keys out of git.
