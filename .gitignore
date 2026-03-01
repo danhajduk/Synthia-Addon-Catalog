@@ -6,3 +6,5 @@ keys/private*
 .DS_Store
 release-output.json
 scripts/apply-release.sh
+.store
+.store/
