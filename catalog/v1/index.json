@@ -14,7 +14,7 @@
           "core_max": null,
           "artifact": {
             "type": "github_release_asset",
-            "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.0/addon.tgz"
+            "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.1/addon.tgz"
           },
           "sha256": "5e0300b94033d614dddd0fb8940242a9bbb8069b059d8cd9a61a5dfc03a369bb",
           "publisher_key_id": "publisher.danhajduk#2026-02",
