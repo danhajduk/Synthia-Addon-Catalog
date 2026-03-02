@@ -40,6 +40,7 @@ VERSION_OVERRIDE=""
 SIGN_KEY=""
 VERIFY_KEY=""
 SKIP_MANIFEST_SHA256=0
+CLEAR_STORE_DIR=1
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -80,6 +81,7 @@ while [[ $# -gt 0 ]]; do
     --sign-key) SIGN_KEY="$2"; shift 2;;
     --verify-key) VERIFY_KEY="$2"; shift 2;;
     --no-manifest-sha256) SKIP_MANIFEST_SHA256=1; shift 1;;
+    --keep-store) CLEAR_STORE_DIR=0; shift 1;;
     -h|--help)
       cat <<'EOF'
 Usage:
@@ -105,6 +107,7 @@ Common options:
   --publisher-display-name <name>    default: publisher-id
   --sign-key <store-private-key.pem> optional: write .sig files
   --verify-key <store-public-key.pem> optional: verify .sig files
+  --keep-store                        do not clear fetched repo ./store/ after import
 EOF
       exit 0
       ;;
@@ -196,6 +199,12 @@ if [[ -n "$VERSION_OVERRIDE" ]]; then IMPORT_ARGS+=(--version "$VERSION_OVERRIDE
 if [[ "$SKIP_MANIFEST_SHA256" -eq 1 ]]; then IMPORT_ARGS+=(--no-manifest-sha256); fi
 
 scripts/import-addon-release.sh "${IMPORT_ARGS[@]}"
+
+if [[ "$CLEAR_STORE_DIR" -eq 1 && -d "$SOURCE_DIR/store" ]]; then
+  find "$SOURCE_DIR/store" -type f -delete
+  find "$SOURCE_DIR/store" -depth -type d -empty -delete
+  echo "Cleared $SOURCE_DIR/store"
+fi
 
 if [[ -n "$SIGN_KEY" ]]; then
   scripts/sign.sh "$SIGN_KEY" --index-path "$INDEX_PATH" --publishers-path "$PUBLISHERS_PATH"

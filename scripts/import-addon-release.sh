@@ -245,6 +245,13 @@ require(isinstance(manifest_name, str) and manifest_name.strip(), "manifest.name
 manifest_version = manifest.get("version")
 require(isinstance(manifest_version, str) and SEMVER_RE.match(manifest_version), "manifest.version must be semver")
 
+manifest_package_profile = manifest.get("package_profile")
+if manifest_package_profile is None and isinstance(manifest.get("release"), dict):
+    # Backward-compatible fallback for older manifests that nested package profile.
+    manifest_package_profile = manifest["release"].get("package_profile")
+if manifest_package_profile is not None:
+    require(isinstance(manifest_package_profile, str) and manifest_package_profile.strip(), "manifest.package_profile must be a non-empty string")
+
 compat = manifest.get("compatibility") or {}
 manifest_core_min = compat.get("core_min_version")
 manifest_core_max = compat.get("core_max_version")
@@ -367,12 +374,16 @@ if addon is None:
         "publisher_id": publisher_id,
         "channels": {"stable": [], "beta": [], "nightly": []}
     }
+    if manifest_package_profile is not None:
+        addon["package_profile"] = manifest_package_profile
     index["addons"].append(addon)
 else:
     addon["name"] = addon_name
     addon["description"] = addon_description
     addon["repo"] = repo_url
     addon["publisher_id"] = publisher_id
+    if manifest_package_profile is not None:
+        addon["package_profile"] = manifest_package_profile
     channels = addon.get("channels")
     if not isinstance(channels, dict):
         channels = {}

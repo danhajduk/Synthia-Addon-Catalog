@@ -24,5 +24,6 @@ Tooling:
 - scripts/verify-release.sh     Verifies publisher release signature
 - scripts/sign.sh               Signs index/publishers with store private key
 - scripts/verify.sh             Verifies catalog signatures with store public key
+- scripts/push-catalog.sh       Commits and pushes index/publishers (+ .sig files)
 
 NOTE: Keep private signing keys out of git.
