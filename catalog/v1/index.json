@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-03-02T11:54:03Z",
+  "updated_at": "2026-03-02T12:08:33Z",
   "addons": [
     {
       "addon_id": "mqtt",
@@ -13,7 +13,7 @@
           {
             "version": "0.1.5",
             "core_compat": {
-              "min": "0.0.1",
+              "min": "0.6.0",
               "max": null
             },
             "artifact": {
@@ -23,27 +23,8 @@
             "sha256": "6af7321e829b95bb01ebbc510740a04a733dc59981097904588f8aacc7eb01f7",
             "publisher_key_id": "publisher.danhajduk#2026-02",
             "signature": {
-              "type": "ed25519",
-              "value": "oZ8eF9TNoKfhK4HY4CTy6lFAkq+vqrKTA11eRebuW01ExZEVxP3DnzrJXtFpo2NmL4fHnO5TjjbraspyCJ/unuo54mMtNSoJBSeZHxlyz/ow7ogNLEpsCbTY4yqq39AVHVOlCRi1PajkW605xx3r8kkKp+PTc+r5BxIu+W9+bD3x8S9Px60M162kGUW/8QnShDkmZ8SdEJhdZIRW470O+Cz/F0G/iMVGFUJtYJiYaGAsPr7FjP96MtEkEUq+s0sCkOsMFla8swBDshPlVtLVCN2TMo4+SHLdfaRpyxipuTHgWIQ7hs3J8ljeUfthqitda34hs2ISsoRqO9G+kNbxSyaF8MSWx7yZH1DHhhH2w2VbOwtZKP/S00EL+0Ptn2gBP8XIX6gJZD02+eyxVqBNEpiVw/OXxvPnFmxDKpwZ7vHOZbR88ufiY6o7qnExJ8mFZKAsVLQMP3UFnT/EquE47eDKRXsPrn12B4yGPDVqnz3HmDQqnM297W41Sp5FbrYTF949+3u/hGZ7yOeoKDQGWbXeE7TOuzwfqilO/tVMa9NpTIqzqSKNWJbxkkHBj8smFAl5npdMllr1JVJhrnzZMrBiJaUuY3q+ij1oBWWzbjySIpuYE3VtLBgo24kSfq7upiZbyJ76aNrheEgOOZGO8MwjIZXwLOSiUQ/3Dm6nKck="
-            },
-            "released_at": "2026-03-02T11:54:03Z",
-            "manifest_sha256": "dd9d11b4956370c43ff9a60d039751f3628b1c14134ed14933ec3e321f9b4aa4"
-          },
-          {
-            "version": "0.1.4",
-            "core_compat": {
-              "min": "0.6.0",
-              "max": null
-            },
-            "artifact": {
-              "type": "github_release_asset",
-              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.4/addon.tgz"
-            },
-            "sha256": "c57f18a35514d028ac76792a3d0289006ddbf40bb00a32735c141865eedf5fc3",
-            "publisher_key_id": "publisher.danhajduk#2026-02",
-            "signature": {
-              "type": "ed25519",
-              "value": "VyJy3HqBMr8JbD0qby6oklq6ts/edhCv9rUT25er8vVCj1b5qLvn6xKmBbTF+k3Qav3Aqa7ke1U+eaIt8fI2tTHdq7xJCpawdKQmmYNURZeR7vtL7/Y9+H2ps2bdSqu+iJck/JLWwqTPVg7TNERMs3Rpjv0AzJI1sEMFSRkUhSk2seh/SUSo0dZlT99dukwztEtipioJWmyQGqhfFSaeKC1Zpa4381qIQvmQmdZSjn5TQISkC2f/EM56HGcarQtne5wVkQisEbUTftfB2ElY863JtT6I8FBASvvx87Oh+rHe+vPxzgW90ikfCCLDSxLVvkJimLxnjbiu/j2w4V7AAhDgepHyELpq8f1IDxyG/mHVcODLjnSJQKDYs1PFyYzQpm0AowmYJ4GLZLhk96p7yQWqjafjRPBaomYT48ikf5RU2ls/L+sY8ragWlBV0NUBKB+78t4hLSo6Uyen3T8/Kbv6u3L2Kf7+SabWRcMybjUY6d/AwkHd1XIUdOBRCkVakiqebjKBterToyw3nTkMraR7O3qd3YxfQaspI6FePYxOPb04jyiyDcNd3rjsCALtJWkWIByZkxnr9Q+H8ePeRxJZFAsj7WbnBfJqd8YnrOWK3gQO7z3Zpjtgzynj/VPPlu7cp00usdsdy/0TqTuBZkwfOozOk8Oy4Ip5KA+ceEI="
+              "type": "rsa-sha256",
+              "value": "fdwl4X1XkyvilHXQX+eGPF4oKCOoLFoJiJi3eoNxy1NlQBb1z0ub4WvnCffkbOriX32bLrdvPgbaEzD+16zEGj3DQ/lMv6e4m5/due5tUD7ogeTUE6DT0WwpS2r9N1qF5Y9u9EHv9Rf3+vmiOjr9/bg9YU6QnL5/21Kq2MDI7w00z5gN2WM+T49wzudkYWDaz1gKd7vfxae0xol9hLXPe2yaLa6W9sdwxj28/URefnqFdVg+Ta01Bf9T+YP0eXx0fOa+9BPNHLGUqeAasDbZzKosVmRj3Go+TLHCMjdUVf6AdZmGJDNM0YPYUau9tffxADjMsaIFJ0fv+j/CNaaE4NJh1ULK09JQSnM/reqeFCgcOQaC+xsH3xQ+u3DOlMhj1aTIsnwdsnea4kbPTn5R+zITDsqxSmjlqqL2wMrrloa9X2shZgAnF2XD0dzYyjOEHjAqFBEXnNXLVCmiWK9loEGh2YyW2Tks9r2nQAQihVQ3BcetcuLLlSGPtJQfKpWsh07raEU1KTAF7VEv5QWthl2fIcEHxPiCVC7Ut2wDjW1Ut37PJK4DsDVgviwxTmzE2xXpC9eThQ3D/zd0YEDYwwBoFFww/gCzGR4mohYNRTqoSdurnrQGZOJFwbEBLLeSvtVrNqtR8ejE+6laN7/ZZv7q7GF9vP2YYC8lRrG3q4k="
             },
             "released_at": "2026-03-02T11:15:48Z",
             "manifest_sha256": "aa652cc032c9a597a4a5b0a9d7623582dfc7d21e1a04fce01ff53d926c23f33d"
