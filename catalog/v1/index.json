@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-03-01T17:17:45Z",
+  "updated_at": "2026-03-02T00:21:50Z",
   "addons": [
     {
       "addon_id": "mqtt",
@@ -26,13 +26,14 @@
               "type": "ed25519",
               "value": "D/M+Kc8SW3iH+qwgXhkJmom9ySWVvkh3mlmvFR2sOPFQsZ22Pg2zRfh09uX8t8J/tjpFM1DJQ64cslQb4MPUHJgTXqHFe3vP/i+KPhiSCmL2amZDFeVplbz1KTpBeHJYnm1/N1kOoWn1dBPzwW2Ym7Y42TcN3pgd7ixrQ+S5Cm0tXXTTRAAEHatN/i503ajeDJtawdGuvjKtqvLvCKlKvs/I4ZWxQR5f6heFYz7F+lvn7op1CiDV0xjEubAVC/s0AetjZ9YkwjMPqpFd9idLEYod8py2W5FRvmtQEgWHKhfiPSbl7GZeYg3zBNKA9CvEsbAAqJOpi+0diatJUaPXb8m8t0tJs96equvY/jhAx+g8Ob3w6finl2FA7htGC0pNYM4GEX882d5pd/Bvt3WrDyUKj4HvgXqpp9NlyO4iLWhX4cy54+4MY9dyWWzTyMdU3fC3e10TqMjlliA687+yZnrVGYIZS/j4pErdH+6ysjBB72YXeOPNaDAkIGpRF9rIotMuMx3aPRB7ELlt8O8PhylJd8caqpLIrvUXJfxZ+p4hqdT2kBnTsT6cUDn3DtqFX4TivJD0CNwnzGGe5LlX6vlJMwBuvoOKKhE5TuAS59472DS2TfqR55jV23xJ5klgqX84s7dSZGKyR5eIMUShmmC/pGaht3QpB8QRvMjSOxo="
             },
-            "released_at": "2026-03-01T17:17:45Z",
+            "released_at": "2026-03-02T00:21:50Z",
             "manifest_sha256": "6ee9b37b1af6a3a5e09a1715b3bc08589c1b957eaf83bf72ed57b533872a280a"
           }
         ],
         "beta": [],
         "nightly": []
-      }
+      },
+      "package_profile": "standalone_service"
     }
   ]
 }
