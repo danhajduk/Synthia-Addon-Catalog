@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-03-02T03:03:03Z",
+  "updated_at": "2026-03-02T11:15:48Z",
   "addons": [
     {
       "addon_id": "mqtt",
@@ -11,23 +11,23 @@
       "channels": {
         "stable": [
           {
-            "version": "0.1.2",
+            "version": "0.1.4",
             "core_compat": {
               "min": "0.6.0",
               "max": null
             },
             "artifact": {
               "type": "github_release_asset",
-              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.2/addon.tgz"
+              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.4/addon.tgz"
             },
-            "sha256": "05c33f15630de6a8e135dd2c1171d8829c643d6e670fcbfaa49e400af9e9373a",
+            "sha256": "c57f18a35514d028ac76792a3d0289006ddbf40bb00a32735c141865eedf5fc3",
             "publisher_key_id": "publisher.danhajduk#2026-02",
             "signature": {
               "type": "ed25519",
-              "value": "D/M+Kc8SW3iH+qwgXhkJmom9ySWVvkh3mlmvFR2sOPFQsZ22Pg2zRfh09uX8t8J/tjpFM1DJQ64cslQb4MPUHJgTXqHFe3vP/i+KPhiSCmL2amZDFeVplbz1KTpBeHJYnm1/N1kOoWn1dBPzwW2Ym7Y42TcN3pgd7ixrQ+S5Cm0tXXTTRAAEHatN/i503ajeDJtawdGuvjKtqvLvCKlKvs/I4ZWxQR5f6heFYz7F+lvn7op1CiDV0xjEubAVC/s0AetjZ9YkwjMPqpFd9idLEYod8py2W5FRvmtQEgWHKhfiPSbl7GZeYg3zBNKA9CvEsbAAqJOpi+0diatJUaPXb8m8t0tJs96equvY/jhAx+g8Ob3w6finl2FA7htGC0pNYM4GEX882d5pd/Bvt3WrDyUKj4HvgXqpp9NlyO4iLWhX4cy54+4MY9dyWWzTyMdU3fC3e10TqMjlliA687+yZnrVGYIZS/j4pErdH+6ysjBB72YXeOPNaDAkIGpRF9rIotMuMx3aPRB7ELlt8O8PhylJd8caqpLIrvUXJfxZ+p4hqdT2kBnTsT6cUDn3DtqFX4TivJD0CNwnzGGe5LlX6vlJMwBuvoOKKhE5TuAS59472DS2TfqR55jV23xJ5klgqX84s7dSZGKyR5eIMUShmmC/pGaht3QpB8QRvMjSOxo="
+              "value": "VyJy3HqBMr8JbD0qby6oklq6ts/edhCv9rUT25er8vVCj1b5qLvn6xKmBbTF+k3Qav3Aqa7ke1U+eaIt8fI2tTHdq7xJCpawdKQmmYNURZeR7vtL7/Y9+H2ps2bdSqu+iJck/JLWwqTPVg7TNERMs3Rpjv0AzJI1sEMFSRkUhSk2seh/SUSo0dZlT99dukwztEtipioJWmyQGqhfFSaeKC1Zpa4381qIQvmQmdZSjn5TQISkC2f/EM56HGcarQtne5wVkQisEbUTftfB2ElY863JtT6I8FBASvvx87Oh+rHe+vPxzgW90ikfCCLDSxLVvkJimLxnjbiu/j2w4V7AAhDgepHyELpq8f1IDxyG/mHVcODLjnSJQKDYs1PFyYzQpm0AowmYJ4GLZLhk96p7yQWqjafjRPBaomYT48ikf5RU2ls/L+sY8ragWlBV0NUBKB+78t4hLSo6Uyen3T8/Kbv6u3L2Kf7+SabWRcMybjUY6d/AwkHd1XIUdOBRCkVakiqebjKBterToyw3nTkMraR7O3qd3YxfQaspI6FePYxOPb04jyiyDcNd3rjsCALtJWkWIByZkxnr9Q+H8ePeRxJZFAsj7WbnBfJqd8YnrOWK3gQO7z3Zpjtgzynj/VPPlu7cp00usdsdy/0TqTuBZkwfOozOk8Oy4Ip5KA+ceEI="
             },
-            "released_at": "2026-03-02T00:21:50Z",
-            "manifest_sha256": "6ee9b37b1af6a3a5e09a1715b3bc08589c1b957eaf83bf72ed57b533872a280a"
+            "released_at": "2026-03-02T11:15:48Z",
+            "manifest_sha256": "aa652cc032c9a597a4a5b0a9d7623582dfc7d21e1a04fce01ff53d926c23f33d"
           }
         ],
         "beta": [],
