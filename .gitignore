@@ -8,3 +8,5 @@ release-output.json
 scripts/apply-release.sh
 .store
 .store/
+.store_sources
+.store_sources/
