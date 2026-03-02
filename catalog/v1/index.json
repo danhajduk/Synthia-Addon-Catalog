@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-03-02T11:15:48Z",
+  "updated_at": "2026-03-02T11:54:03Z",
   "addons": [
     {
       "addon_id": "mqtt",
@@ -10,6 +10,25 @@
       "publisher_id": "publisher.danhajduk",
       "channels": {
         "stable": [
+          {
+            "version": "0.1.5",
+            "core_compat": {
+              "min": "0.0.1",
+              "max": null
+            },
+            "artifact": {
+              "type": "github_release_asset",
+              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.1.5/addon.tgz"
+            },
+            "sha256": "6af7321e829b95bb01ebbc510740a04a733dc59981097904588f8aacc7eb01f7",
+            "publisher_key_id": "publisher.danhajduk#2026-02",
+            "signature": {
+              "type": "ed25519",
+              "value": "oZ8eF9TNoKfhK4HY4CTy6lFAkq+vqrKTA11eRebuW01ExZEVxP3DnzrJXtFpo2NmL4fHnO5TjjbraspyCJ/unuo54mMtNSoJBSeZHxlyz/ow7ogNLEpsCbTY4yqq39AVHVOlCRi1PajkW605xx3r8kkKp+PTc+r5BxIu+W9+bD3x8S9Px60M162kGUW/8QnShDkmZ8SdEJhdZIRW470O+Cz/F0G/iMVGFUJtYJiYaGAsPr7FjP96MtEkEUq+s0sCkOsMFla8swBDshPlVtLVCN2TMo4+SHLdfaRpyxipuTHgWIQ7hs3J8ljeUfthqitda34hs2ISsoRqO9G+kNbxSyaF8MSWx7yZH1DHhhH2w2VbOwtZKP/S00EL+0Ptn2gBP8XIX6gJZD02+eyxVqBNEpiVw/OXxvPnFmxDKpwZ7vHOZbR88ufiY6o7qnExJ8mFZKAsVLQMP3UFnT/EquE47eDKRXsPrn12B4yGPDVqnz3HmDQqnM297W41Sp5FbrYTF949+3u/hGZ7yOeoKDQGWbXeE7TOuzwfqilO/tVMa9NpTIqzqSKNWJbxkkHBj8smFAl5npdMllr1JVJhrnzZMrBiJaUuY3q+ij1oBWWzbjySIpuYE3VtLBgo24kSfq7upiZbyJ76aNrheEgOOZGO8MwjIZXwLOSiUQ/3Dm6nKck="
+            },
+            "released_at": "2026-03-02T11:54:03Z",
+            "manifest_sha256": "dd9d11b4956370c43ff9a60d039751f3628b1c14134ed14933ec3e321f9b4aa4"
+          },
           {
             "version": "0.1.4",
             "core_compat": {
