@@ -11,14 +11,14 @@
       "channels": {
         "stable": [
           {
-            "version": "0.2.4",
+            "version": "0.2.5",
             "core_compat": {
               "min": "0.6.0",
               "max": null
             },
             "artifact": {
               "type": "github_release_asset",
-              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.2.4/addon.tgz"
+              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.2.5/addon.tgz"
             },
             "sha256": "6af7321e829b95bb01ebbc510740a04a733dc59981097904588f8aacc7eb01f7",
             "publisher_key_id": "publisher.danhajduk#2026-02",
