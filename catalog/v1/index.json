@@ -1,39 +1,5 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-03-02T12:12:23Z",
-  "addons": [
-    {
-      "addon_id": "mqtt",
-      "name": "Synthia MQTT",
-      "description": "MQTT integration layer for Synthia Core",
-      "repo": "https://github.com/danhajduk/Synthia-MQTT.git",
-      "publisher_id": "publisher.danhajduk",
-      "channels": {
-        "stable": [
-          {
-            "version": "0.2.14",
-            "core_compat": {
-              "min": "0.6.0",
-              "max": null
-            },
-            "artifact": {
-              "type": "github_release_asset",
-              "url": "https://github.com/danhajduk/Synthia-MQTT/releases/download/v0.2.14/addon.tgz"
-            },
-            "sha256": "6af7321e829b95bb01ebbc510740a04a733dc59981097904588f8aacc7eb01f7",
-            "publisher_key_id": "publisher.danhajduk#2026-02",
-            "signature": {
-              "type": "rsa-sha256",
-              "value": "fdwl4X1XkyvilHXQX+eGPF4oKCOoLFoJiJi3eoNxy1NlQBb1z0ub4WvnCffkbOriX32bLrdvPgbaEzD+16zEGj3DQ/lMv6e4m5/due5tUD7ogeTUE6DT0WwpS2r9N1qF5Y9u9EHv9Rf3+vmiOjr9/bg9YU6QnL5/21Kq2MDI7w00z5gN2WM+T49wzudkYWDaz1gKd7vfxae0xol9hLXPe2yaLa6W9sdwxj28/URefnqFdVg+Ta01Bf9T+YP0eXx0fOa+9BPNHLGUqeAasDbZzKosVmRj3Go+TLHCMjdUVf6AdZmGJDNM0YPYUau9tffxADjMsaIFJ0fv+j/CNaaE4NJh1ULK09JQSnM/reqeFCgcOQaC+xsH3xQ+u3DOlMhj1aTIsnwdsnea4kbPTn5R+zITDsqxSmjlqqL2wMrrloa9X2shZgAnF2XD0dzYyjOEHjAqFBEXnNXLVCmiWK9loEGh2YyW2Tks9r2nQAQihVQ3BcetcuLLlSGPtJQfKpWsh07raEU1KTAF7VEv5QWthl2fIcEHxPiCVC7Ut2wDjW1Ut37PJK4DsDVgviwxTmzE2xXpC9eThQ3D/zd0YEDYwwBoFFww/gCzGR4mohYNRTqoSdurnrQGZOJFwbEBLLeSvtVrNqtR8ejE+6laN7/ZZv7q7GF9vP2YYC8lRrG3q4k="
-            },
-            "released_at": "2026-03-02T11:15:48Z",
-            "manifest_sha256": "aa652cc032c9a597a4a5b0a9d7623582dfc7d21e1a04fce01ff53d926c23f33d"
-          }
-        ],
-        "beta": [],
-        "nightly": []
-      },
-      "package_profile": "standalone_service"
-    }
-  ]
+  "addons": []
 }
